@@ -21,9 +21,35 @@
 		<input type="text" id="email" name= "email"><br/>
 		<label for="phone">Phone:</label><br/>
 		<input type="text" id="phone" name= "phone"><br/>
+		<label for="reason">Reason for Inquiry:</label>
+		<select id="reason" name="reason">
+			<option value="catering" selected>Catering</option>
+			<option value="privateParty">Private Party</option>
+			<option value="feedback">Feedback</option>
+			<option value="Other">Other</option>
+		</select><br/>
+		<label for= "additionalinformation">Additional Information:</label>
+		<textarea id="additionalinformation" name="additionalinformation"></textarea><br/>
+		<label for="questionnaire">Have you been to the restaurant?</label>
+		<input type="radio" id="choice1" name="questionnaire" value ="yes">
+		<label for="choice1">No</label>
+		<input type="radio" id="choice2" name="questionnaire" value ="no">
+		<label for="choice2">Yes</label><br/>
+		<label for="bestDay">Best days to contact you::</label>
+		<input type="checkbox" id="m" name= "day" value= "monday">
+		<label for="m">M</label>
+		<input type="checkbox" id="t" name= "day" value= "tuseday">
+		<label for="t">T</label>
+		<input type="checkbox" id="w" name= "day" value= "wednesday">
+		<label for="w">W</label>
+		<input type="checkbox" id="th" name= "day" value= "thursday">
+		<label for="th">Th</label>
+		<input type="checkbox" id="f" name= "day" value= "friday">
+		<label for="f">F</label><br/>
+		<input type="submit" name="submit" value="Send Request">
 	</form>
 	<hr/>
-	<section>
+	
 	<section>
 		404 Not Found Lane, Internet City, MN, 22109 <br/>
 		507-2344-835
