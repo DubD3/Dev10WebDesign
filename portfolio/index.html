@@ -9,9 +9,31 @@ Most Recent Revision:1.0
 		<title>Will's Portfolio</title>
 		<link href="styles/teststyles.css" rel="stylesheet" type="text/css" />
 		<style>
-			header {
-        background-color: darkgray;
-    }
+			caption{
+				font-weight: bold;
+				font-size:1.2em;
+				margin-bottom: 8px;
+			}
+			
+			table, th, td{
+				border: 1px solid #0d1f2d;
+				border-collapse: collapse;
+				padding: 5px 10px;				
+			}
+			table{
+				width: 90%;
+				margin:auto;
+			}
+			tr{
+				height: 30px;
+			}
+			tr:nth-child(odd){
+				background-color:#e4c3ad;
+			}
+			th{
+				background-color:#546a7b;
+				color:white;
+			}
 		</style>
 	</head>
 
@@ -37,13 +59,16 @@ Most Recent Revision:1.0
 				<!--<p>Maecenas semper ipsum ut vulputate porttitor. Nam ut lobortis arcu. Phasellus laoreet massa vitae placerat volutpat. Morbi eget mollis lorem, et egestas lectus.<span style="background-color: crimson; border: thin solid darkblue"> Integer faucibus ultrices ante. Aliquam sodales est in sodales molestie. Vestibulum nibh mi, consectetur vel quam sit amet, gravida hendrerit velit.</span> Maecenas aliquam, diam at sollicitudin porta, felis metus auctor leo, a laoreet ex quam ut risus. </p>
 				
 				<p>Aenean sed sollicitudin justo. Morbi eget purus sed turpis suscipit pulvinar sed vitae nisl. Fusce accumsan tellus tellus, in tristique tellus dignissim at. Mauris non fringilla eros. Quisque tempor lorem vel eros imperdiet mattis.</p>-->
-				<table border="1">
+				<table>
 					<caption>Employment History</caption>
+					<thread>
 					<tr>
 						<th>Years of Employment</th>
 						<th>Title</th>
 						<th>Company</th>
 					</tr>
+					</thread>
+					<tbody>
 					<tr>
 						<td>2014-2019</td>
 						<td>Program Assistant</td>
@@ -54,6 +79,7 @@ Most Recent Revision:1.0
 						<td>Ride Operator</td>
 						<td>Kalahari</td>
 					</tr>
+					</tbody>
 				</table>
 			</article>	
 			<article id = "Hobbies">
