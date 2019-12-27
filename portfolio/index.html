@@ -7,24 +7,40 @@ Most Recent Revision:1.0
 <html lang="en">
 	<head>
 		<title>Will's Portfolio</title>
+		<style>
+			body{
+				background-color:lightblue;
+			}
+			header,footer{
+				background-color:indianred;
+				color:white;
+			}
+			.border{
+				border:thick solid blue;
+			}
+			#PastExperiences{
+				border:thick dashed orange;
+			}
+		</style>
 	</head>
 
 	<body>
 		<header>
 			<h1>Portfolio for William Dorow</h1>
 		</header>
-		<hr/>
-		<nav>
+		<nav class="border">
+			<hr style="border: thin dotted red;"/>
 			<p><a href="projects.html">Projects</a> <a href="contact.html">Contact Me</a> <a href="testimonials.html">Testimonials</a></p>
+			<hr style= "width:50%; border:2px solid blueviolet"/>
 		</nav><!-- Too Do: Add Links to projects.html, contact.html, and testimonials.html  -->
-		<hr/>
+		
 		<section>
-			<article id = "about me">
+			<article class="border" id = "about me">
 				<h2><em>About Me</em></h2>
 				<img src="images/Family.jpg" width= "500px" alt="Photo of William's Family">
 					<p><strong>Chemical engineer</strong> with a passion for learning and problem solving with a broad educational background in engineering, science, math, <strong>computer science</strong>, process and design.</p>
 			</article>
-			<article id = "Past Experiences">
+			<article id = "PastExperiences">
 				<h2><em>Past Experiences</em></h2>
 				<img src="images/HeatExchanger.jpg" width= "500px" alt="Photo of Heat Exchanger">
 				<!--<p>Maecenas semper ipsum ut vulputate porttitor. Nam ut lobortis arcu. Phasellus laoreet massa vitae placerat volutpat. Morbi eget mollis lorem, et egestas lectus.<span style="background-color: crimson; border: thin solid darkblue"> Integer faucibus ultrices ante. Aliquam sodales est in sodales molestie. Vestibulum nibh mi, consectetur vel quam sit amet, gravida hendrerit velit.</span> Maecenas aliquam, diam at sollicitudin porta, felis metus auctor leo, a laoreet ex quam ut risus. </p>
