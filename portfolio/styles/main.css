@@ -25,6 +25,28 @@ nav{
 	border-bottom: 3px dashed #546a7b;
 	margin-top: 4px;
 }
+nav a{
+	background-color:#5b7d87;
+	color: #fef9ff;
+	padding:8px;
+	border:thin solid #0d1fd2;
+	text-decoration: none;
+	text-align: center;
+	display:block;
+	margin:20px;
+	width:100px;
+	float:left;
+}
+nav a:hover{
+	background-color: #fef9ff;
+    color: #5b7d87; 
+}
+nav a:active {
+    font-weight: bold;
+}
+nav a:visited {
+    color: #e4c3ad; 
+}
 .clear-float{
 	clear:both;
 }
@@ -32,6 +54,9 @@ article img{
 	float:left;
 	max-height:50%;
 	max-width:50%;
+}
+article{
+	margin-bottom:16px;
 }
 .right-content{
 	float:left;
