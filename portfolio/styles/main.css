@@ -7,7 +7,7 @@ body{
 	background-color:#fef9ff;
 	font-family: arial, helvetica, sans-serif;
 	color: #0d1f2d;
-	max-width:900px;
+	max-width:1200px;
 	margin: 0 auto;
 }
 header, footer{
@@ -29,5 +29,10 @@ nav{
 	clear:both;
 }
 article img{
+	float:left;
+	max-height:50%;
+	max-width:50%;
+}
+.right-content{
 	float:left;
 }
