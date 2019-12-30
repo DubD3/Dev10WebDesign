@@ -1,3 +1,9 @@
 @charset "utf-8";
 /* CSS Document */
-
+.jumbotron{
+	background-color:#D8C3A5;
+	text-align: center;
+}
+body{
+	background-color:#EAE7DC;
+}
