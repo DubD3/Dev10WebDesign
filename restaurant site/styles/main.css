@@ -7,3 +7,10 @@
 body{
 	background-color:#EAE7DC;
 }
+nav .btn{
+	background-color: #e98074;
+	color: #8e8d8a;
+}
+nav .btn:hover{
+	font-weight:bold;
+}
