@@ -5,6 +5,11 @@
 <title>Contact Us</title>
 <link href="css/bootstrap-4.3.1.css" rel="stylesheet" type="text/css">
 <link href="styles/main.css" rel="stylesheet" type="text/css" />
+	<style>
+		#lname, #lemail, #lphone, #lreason, #lq, #lbestday{
+			font-weight: bold;
+		}
+	</style>
 </head>
 
 <body>
@@ -17,13 +22,13 @@
 	</nav>
 	<hr/>
 	<form action="submit.html" method="POST">
-		<label for="name">Name:</label><br/>
+		<label id="lname" for="name">Name:</label><br/>
 		<input type="text" id="name" name= "name"><br />
-		<label for="email">Email:</label><br/>
+		<label id="lemail" for="email">Email:</label><br/>
 		<input type="text" id="email" name= "email"><br/>
-		<label for="phone">Phone:</label><br/>
+		<label id="lphone" for="phone">Phone:</label><br/>
 		<input type="text" id="phone" name= "phone"><br/>
-		<label for="reason">Reason for Inquiry:</label>
+		<label id="lreason" for="reason">Reason for Inquiry:</label>
 		<select id="reason" name="reason">
 			<option value="catering" selected>Catering</option>
 			<option value="privateParty">Private Party</option>
@@ -32,12 +37,12 @@
 		</select><br/>
 		<label for= "additionalinformation">Additional Information:</label>
 		<textarea id="additionalinformation" name="additionalinformation"></textarea><br/>
-		<label for="questionnaire">Have you been to the restaurant?</label>
+		<label id="lq" for="questionnaire">Have you been to the restaurant?</label>
 		<input type="radio" id="choice1" name="questionnaire" value ="yes">
 		<label for="choice1">No</label>
 		<input type="radio" id="choice2" name="questionnaire" value ="no">
 		<label for="choice2">Yes</label><br/>
-		<label for="bestDay">Best days to contact you::</label>
+		<label id = "lbestday" for="bestDay">Best days to contact you::</label>
 		<input type="checkbox" id="m" name= "day" value= "monday">
 		<label for="m">M</label>
 		<input type="checkbox" id="t" name= "day" value= "tuseday">
