@@ -7,10 +7,14 @@
 body{
 	background-color:#EAE7DC;
 }
-nav .btn{
+
+#jim .btn{
 	background-color: #e98074;
 	color: black;
 }
-nav .btn:hover{
+#jim .btn:hover{
 	font-weight:bold;
+}
+#jim a:visited{
+	color: white;
 }
