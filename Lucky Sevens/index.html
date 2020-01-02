@@ -7,11 +7,80 @@
 <title>Lucky Sevens</title>
 <link href="css/bootstrap-4.3.1.css" rel="stylesheet" type="text/css">
 	<script type="text/javascript" src="js/luckySeven.js"></script>
+	<style>
+		table, th, td{
+				border: 1px solid #0d1f2d;
+				border-collapse: collapse;
+				padding: 5px 10px;				
+			}
+			table{
+				width: 90%;
+				margin:auto;
+			}
+			tr{
+				height: 30px;
+			}
+			tr:nth-child(odd){
+				background-color:#e4c3ad;
+			}
+			th{
+				background-color:#546a7b;
+				color:white;
+			}
+		#table{
+			align-content: flex-start;
+		}
+
+	</style>
 </head>
 	
 
 <body>
-		<!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> 
+	<div class="container">
+		<div class= "row justify-content-center">
+			<div class="col-7">
+				<h1>Lucky Seven</h1>
+			</div>
+		</div>
+		<div class= "row justify-content-center">
+			<div class="col-2">
+				<h2>Starting Bet:</h2>
+			</div>
+			<div class="col-5">
+				<input id="input" type="text">
+			</div>
+		</div>
+		<div class= "row justify-content-center">
+			<div class="col-4">
+				<button onClick="main();">Play</button>
+			</div>
+		</div>
+		<div id="table" style="display:none" >
+			<div class="col-md-6 offset-2">
+				<table >
+					<tbody>
+						<tr>
+							<td>Starting Bet</td>
+							<td>todo</td>
+						</tr>
+						<tr>
+							<td>Total Rolls Before Going Broke</td>
+							<td>todo</td>
+						</tr>
+						<tr>
+							<td>Highest Amount Won</td>
+							<td>todo</td>
+						</tr>
+						<tr>
+							<td>Roll Count at Highest Amount Won</td>
+							<td>todo</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</divid="table" style="display:none">
+	</div>
+	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> 
 	<script src="js/jquery-3.3.1.min.js"></script>
 
 	<!-- Include all compiled plugins (below), or include individual files as needed -->
