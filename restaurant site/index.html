@@ -1,20 +1,27 @@
 <!doctype html>
 <html>
+
 <head>
-<meta charset="utf-8">
-<title>Home Page</title>
-<link href="css/bootstrap-4.3.1.css" rel="stylesheet" type="text/css">
-<link href="styles/main.css" rel="stylesheet" type="text/css" />
+	<meta charset="utf-8">
+	<title>Home Page</title>
+	<link href="css/bootstrap-4.3.1.css" rel="stylesheet" type="text/css">
+	<link href="styles/main.css" rel="stylesheet" type="text/css" />
 	<style>
-		#imaimage{
+		#imaimage {
 			display: block;
 			margin-left: auto;
-			margin-right:auto;
+			margin-right: auto;
 		}
-		nav{
+
+		nav {
 			display: block;
 			margin-left: auto;
-			margin-right:auto;
+			margin-right: auto;
+		}
+		.carousel{
+			background-color: #D8C3A5;
+			text-align: center;
+			
 		}
 	</style>
 </head>
@@ -23,48 +30,66 @@
 	<header class="jumbotron">
 		<h1>Dorow Delights</h1>
 	</header>
-	<hr/>
+	<hr />
 	<!--<div class="container" >-->
-	<div class="row justify-content-center">
-	<div class="col-lg-5" id="jim">
-		<a class="btn" href="index.html">Home</a>
-		<a class="btn" href="menu.html">Menu</a>
-		<a class= "btn" href="contact_us.html">Contact Us</a>
+	<div class="carousel slide" data-ride="carousel">
+		<div class="carousel-inner">
+			<div class="carousel-item active">
+				Were Opening A New Location at TBD!
+			</div>
+			<div class="carousel-item">
+				We're rolling out our seasonal menu, with special options for this season.
+			</div>
+			<div class="carousel-item">
+				The Drink of the Month is SG Special Brew.
+			</div>
+		</div>
 	</div>
+	<div class="row justify-content-center">
+		<div class="col-lg-5" id="jim">
+			<a class="btn" href="index.html">Home</a>
+			<a class="btn" href="menu.html">Menu</a>
+			<a class="btn" href="contact_us.html">Contact Us</a>
+		</div>
 	</div>
 	<!--</div>-->
-		
-	<hr/>
-	<div class="container" >
+
+	<hr />
+	<div class="container">
 		<div class="row justify-content-center">
-			<div id="homepic" class="col-lg-5"  >
-				<img id="imaimage" class="img-fluid"  src="images/restaurant-dark-bar-architecture-34650.jpg" alt="Picture of restaurant">
-				
+			<div id="homepic" class="col-lg-5">
+				<img id="imaimage" class="img-fluid" src="images/restaurant-dark-bar-architecture-34650.jpg"
+					alt="Picture of restaurant">
+
 			</div>
-			</div>
-		
+		</div>
+
 		<div class="row justify-content-center">
 			<div class="col-lg-5">
-		<section>
-			Restaurant Description <br/>
-			Lorem ipsum dolor sit amet, has timeam euripidis ea, eu brute eirmod accusata usu. Ad graeci eleifend mel. Vis unum complectitur ea. Vitae impetus alterum his ne, meis utamur pertinax cum in. Pri veri brute at, posse adipisci et nec, sumo reprehendunt ea quo. Aliquam insolens cu sed, altera latine docendi eos ea. In qui meis soleat vocent, pro saperet inciderint ei.
-		</section>
-				
-	<hr/>
+				<section>
+					Restaurant Description <br />
+					Lorem ipsum dolor sit amet, has timeam euripidis ea, eu brute eirmod accusata usu. Ad graeci
+					eleifend mel. Vis unum complectitur ea. Vitae impetus alterum his ne, meis utamur pertinax cum in.
+					Pri veri brute at, posse adipisci et nec, sumo reprehendunt ea quo. Aliquam insolens cu sed, altera
+					latine docendi eos ea. In qui meis soleat vocent, pro saperet inciderint ei.
+				</section>
+
+				<hr />
+			</div>
 		</div>
-		</div>
-		</div>
-	
+	</div>
+
 	<section class="jumbotron">
-		404 Not Found Lane, Internet City, MN, 22109 <br/>
+		404 Not Found Lane, Internet City, MN, 22109 <br />
 		507-2344-835
 	</section>
-	
-	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> 
+
+	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 	<script src="js/jquery-3.3.1.min.js"></script>
 
 	<!-- Include all compiled plugins (below), or include individual files as needed -->
-	<script src="js/popper.min.js"></script> 
+	<script src="js/popper.min.js"></script>
 	<script src="js/bootstrap-4.3.1.js"></script>
 </body>
+
 </html>
