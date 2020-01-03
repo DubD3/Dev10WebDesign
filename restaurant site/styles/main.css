@@ -7,7 +7,16 @@
 body{
 	background-color:#EAE7DC;
 }
-
+.nav-tabs .nav-link.active,
+.nav-tabs .nav-item.show .nav-link {
+  color: #495057;
+  background-color:#e98074 ;
+  border-color: #dee2e6 #dee2e6 #fff;
+  
+}
+/*.nav-link.active{
+	background-color: azure;
+}*/
 #jim .btn{
 	background-color: #e98074;
 	color: black;
@@ -15,6 +24,6 @@ body{
 #jim .btn:hover{
 	font-weight:bold;
 }
-#jim a:visited{
-	color: white;
-}
+/*#jim a:visited{
+	color: rgb(214, 55, 55);
+}*/

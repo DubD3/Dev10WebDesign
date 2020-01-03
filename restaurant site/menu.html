@@ -1,30 +1,37 @@
 <!doctype html>
 <html>
+
 <head>
-<meta charset="utf-8">
-<title>Menu</title>
-<link href="css/bootstrap-4.3.1.css" rel="stylesheet" type="text/css">
-<link href="styles/main.css" rel="stylesheet" type="text/css" />
+	<meta charset="utf-8">
+	<title>Menu</title>
+	<link href="css/bootstrap-4.3.1.css" rel="stylesheet" type="text/css">
+	<link href="styles/main.css" rel="stylesheet" type="text/css" />
 	<style>
-		table, th, td{
-				border: 1px solid #0d1f2d;
-				border-collapse: collapse;
-				padding: 5px 10px;				
-			}
-			table{
-				width: 70%;
-				margin:auto;
-			}
-			tr{
-				height: 30px;
-			}
-			tr:nth-child(odd){
-				background-color:#D8C3A5;
-			}
-			th{
-				background-color:#e98074;
-				color:white;
-			}
+		table,
+		th,
+		td {
+			border: 1px solid #0d1f2d;
+			border-collapse: collapse;
+			padding: 5px 10px;
+		}
+
+		table {
+			width: 70%;
+			margin: auto;
+		}
+
+		tr {
+			height: 30px;
+		}
+
+		tr:nth-child(odd) {
+			background-color: #D8C3A5;
+		}
+
+		th {
+			background-color: #e98074;
+			color: white;
+		}
 	</style>
 </head>
 
@@ -32,40 +39,55 @@
 	<header class="jumbotron">
 		<h1>Restaurant Name</h1>
 	</header>
-	<hr/>
-	<nav>
-		<p><a class="btn" href="index.html">Home</a>&emsp;<a class="btn" href="menu.html">Menu</a>&emsp;<a class="btn" href="contact_us.html">Contact Us</a></p>
-	</nav>
-	<hr/>
+	<hr />
+	<div class="row justify-content-center">
+		<div class="col-lg-5" id="jim">
+			<ul class="nav nav-tabs justify-content-center">
+				<li class="nav-item">
+				  <a class="nav-link" href="index.html">Home</a>
+				</li>
+				<li class="nav-item">
+				  <a class="nav-link active" href="menu.html">Menu</a>
+				</li>
+				<li class="nav-item">
+				  <a class="nav-link" href="contact_us.html">Contact Us</a>
+				</li>
+			  </ul>
+			<!--<a class="btn" href="index.html">Home</a>
+			<a class="btn" href="menu.html">Menu</a>
+			<a class="btn" href="contact_us.html">Contact Us</a>-->
+		</div>
+	</div>
+	<hr />
 	<!--<div class="container">-->
-		<div class="row">
-	<section class="col-sm-4" align="center">
-		<h5>Burger and Fries</h5>
-		An American Classic!
-	</section >
-	<section class="col-sm-4" align= "center">
-		<h5>Hot Dog and Chips</h5>
-		An Summer Classic!
-	</section>
-	<section class="col-sm-4" align="center">
-		<h5>Italian Sausage and Peppers</h5>
-		An All-Time Classic!
-	</section>
-			</div>
-		<div class="row">
-	<section class="col-sm-4" align="center">
-		<h5>Tendrelion Sandwich and Chips</h5>
-		Really Hits the Spot!
-	</section>
-	<section class="col-sm-4" align="center">
-		<h5>House Salad</h5>
-		On the Lighter Side
-	</section>
-	<section class="col-sm-4" align="center">
-		<h5>Brisket Sandwich and Fries</h5>
-		A Taste of Texas!
-	</section>
-			</div>
+	<div class="row">
+		<section class="col-sm-4" align="center">
+			<h5>Burger and Fries</h5>
+			An American Classic!
+		</section>
+		<section class="col-sm-4" align="center">
+			<h5>Hot Dog and Chips</h5>
+			An Summer Classic!
+		</section>
+		<section class="col-sm-4" align="center">
+			<h5>Italian Sausage and Peppers</h5>
+			An All-Time Classic!
+		</section>
+	</div>
+	<div class="row">
+		<section class="col-sm-4" align="center">
+			<h5>Tendrelion Sandwich and Chips</h5>
+			Really Hits the Spot!
+		</section>
+		<section class="col-sm-4" align="center">
+			<h5>House Salad</h5>
+			On the Lighter Side
+		</section>
+		<section class="col-sm-4" align="center">
+			<h5>Brisket Sandwich and Fries</h5>
+			A Taste of Texas!
+		</section>
+	</div>
 	<!--</div>-->
 	<div class="row justify-content-center">
 		<div class="col-6">
@@ -95,16 +117,17 @@
 			</table>
 		</div>
 	</div>
-	<hr/>
-	<section class = "jumbotron">
-		404 Not Found Lane, Internet City, MN, 22109 <br/>
+	<hr />
+	<section class="jumbotron">
+		404 Not Found Lane, Internet City, MN, 22109 <br />
 		507-2344-835
 	</section>
-	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> 
+	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 	<script src="js/jquery-3.3.1.min.js"></script>
 
 	<!-- Include all compiled plugins (below), or include individual files as needed -->
-	<script src="js/popper.min.js"></script> 
+	<script src="js/popper.min.js"></script>
 	<script src="js/bootstrap-4.3.1.js"></script>
 </body>
+
 </html>
