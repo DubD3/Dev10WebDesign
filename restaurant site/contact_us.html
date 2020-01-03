@@ -16,6 +16,7 @@
 			font-weight: bold;
 		}
 	</style>
+	
 </head>
 
 <body>
@@ -43,7 +44,7 @@
 	</div>
 	<hr />
 	<div class="container">
-		<form action="submit.html" method="POST">
+		<form name="contactUs" action="submit.html" method="POST" onsubmit="return validateForm()">
 			<div class="form-group row">
 				<label id="lname" for="name" class="col-1 offset-4 col-form-label text-right">Name:</label>
 				<div class="col-3">
@@ -150,6 +151,29 @@
 	<!-- Include all compiled plugins (below), or include individual files as needed -->
 	<script src="js/popper.min.js"></script>
 	<script src="js/bootstrap-4.3.1.js"></script>
+	<script>
+		function validateForm(){
+			//console.log("Here")
+			var valid = true;
+			var name = document.forms["contactUs"]["name"].value;
+			var email = document.forms["contactUs"]["email"].value;
+			var phone = document.forms["contactUs"]["phone"].value;
+			//alert(name);
+			if(name ==""){
+				alert("Please input a name.")
+				valid =false;
+			}
+			if (!(/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(email))){
+				alert("Please input a vilid email");
+				valid=false;
+			}
+			if(isNaN(phone)){
+				alert("Please input a valid phone number.")
+				valid =false;
+			}
+			return valid;
+		}
+	</script>
 </body>
 
 </html>
