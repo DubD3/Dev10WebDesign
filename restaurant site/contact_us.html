@@ -4,6 +4,7 @@
 <head>
 	<meta name="viewport" content="width=device-width, initial-scale=1" charset="utf-8">
 	<title>Contact Us</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link href="css/bootstrap-4.3.1.css" rel="stylesheet" type="text/css">
 	<link href="styles/main.css" rel="stylesheet" type="text/css" />
 	<style>
@@ -20,10 +21,14 @@
 </head>
 
 <body>
+	
 	<header class="jumbotron">
 		<h1>Restaurant Name</h1>
 	</header>
 	<hr />
+	<noscript>
+		This site is best viewed with JavaScript enabled!
+	 </noscript>
 	<div class="row justify-content-center">
 		<div class="col-lg-5" id="jim">
 			<ul class="nav nav-tabs justify-content-center">
@@ -89,12 +94,12 @@
 					<div class="form-check form-check-inline">
 						<input type="radio" id="choice1" name="questionnaire" value="yes"
 							class="form-check-input form-control-sm">
-						<label for="choice1" class="form-check-label">No</label>
+						<label for="choice1" class="form-check-label">Yes</label>
 					</div>
 					<div class="form-check form-check-inline">
 						<input type="radio" id="choice2" name="questionnaire" value="no"
 							class="form-check-input form-control-sm">
-						<label for="choice2" class="form-check-label">Yes</label><br />
+						<label for="choice2" class="form-check-label">No</label><br />
 					</div>
 				</div>
 			</div>
@@ -159,19 +164,35 @@
 			var email = document.forms["contactUs"]["email"].value;
 			var phone = document.forms["contactUs"]["phone"].value;
 			var phone = document.forms["contactUs"]["phone"].value;
-			
+			var questionnaire = document.forms["contactUs"]["questionnaire"].value;
+			var day = document.forms["contactUs"]["day"];
+			console.log( document.forms["contactUs"]["day"]);
+			console.log(questionnaire);
+			console.log(day[0].checked);
+			console.log(day[1].checked);
 			//alert(name);
 			if(name ==""){
 				alert("Please input a name.")
 				valid =false;
 			}
 			if (!(/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(email))){
-				alert("Please input a vilid email");
+				alert("Please input a valid email");
 				valid=false;
 			}
-			if(isNaN(phone)){
-				alert("Please input a valid phone number.")
+			if((isNaN(phone))||(phone ==="")){
+				alert("Please input a valid phone number.");
 				valid =false;
+			}
+			if(questionnaire===""){
+				alert("Please select if you have been to the resturant")
+				valid = false;
+			}
+			if(!((day[0].checked)||(day[1].checked)||(day[2].checked)||(day[3].checked)||(day[4].checked))){
+				alert("Please select at least one day to contact you.");
+				valid=false;
+			}
+			if(valid){
+				alert("Your contact request has been submitted.")
 			}
 			return valid;
 		}
