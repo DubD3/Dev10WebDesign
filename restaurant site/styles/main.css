@@ -17,6 +17,12 @@ body{
 /*.nav-link.active{
 	background-color: azure;
 }*/
+.col-form-label{
+	margin-right: 20px;
+}
+input[type=text]{
+	min-width: 200px;
+}
 #jim .btn{
 	background-color: #e98074;
 	color: black;
