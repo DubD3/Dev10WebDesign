@@ -14,14 +14,12 @@ function play() {
                 console.log("start")
                 
                 var total = parseFloat(startBet);
-                console.log(total);
-                console.log(typeof(total));
+                //console.log(total);
+                //console.log(typeof(total));
                 var maxTotal = total;
                 var numOfRounds = 0;
                 var maxRoll = 0;
                 // alert(startBet);
-                var test = 5.342
-                var b = test.toFixed(2)
                 console.log(b)
                 do {
                     numOfRounds++;
@@ -41,8 +39,8 @@ function play() {
                         total = parseFloat(total);
                         maxTotal = parseFloat(maxTotal)
                         //console.log(total)
-                        console.log(typeof(total))
-                        console.log(typeof(maxTotal))
+                        //console.log(typeof(total))
+                        //console.log(typeof(maxTotal))
                         if (total > maxTotal) {
                             maxTotal = total;
                             maxRoll = numOfRounds;
