@@ -61,9 +61,9 @@ nav {
 .col-form-label{
 	margin-right: 20px;
 }
-input[type=text]{
+/*input[type=text]{
 	min-width: 150px;
-}
+}*/
 #jim .btn{
 	background-color: #e98074;
 	color: black;
