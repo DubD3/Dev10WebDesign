@@ -62,7 +62,7 @@ nav {
 	margin-right: 20px;
 }
 input[type=text]{
-	min-width: 200px;
+	min-width: 150px;
 }
 #jim .btn{
 	background-color: #e98074;
@@ -71,6 +71,7 @@ input[type=text]{
 #jim .btn:hover{
 	font-weight:bold;
 }
+
 /*#jim a:visited{
 	color: rgb(214, 55, 55);
 }*/
