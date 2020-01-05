@@ -1,5 +1,8 @@
 @charset "utf-8";
 /* CSS Document */
+html, body {
+    overflow-x: hidden;
+  }
 #top{
     /*background-color:#00a99d;*/
     background-image: url(../images/jumboheader.jpg);
