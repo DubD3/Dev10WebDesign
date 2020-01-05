@@ -20,7 +20,7 @@ function play() {
                 var numOfRounds = 0;
                 var maxRoll = 0;
                 // alert(startBet);
-                console.log(b)
+               
                 do {
                     numOfRounds++;
                     console.log("round")
