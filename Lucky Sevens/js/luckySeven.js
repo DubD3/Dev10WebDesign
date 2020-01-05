@@ -38,7 +38,11 @@ function play() {
                         //console.log(typeof(total));
                         total = parseFloat(total);
                         total = total.toFixed(2);
+                        total = parseFloat(total);
+                        maxTotal = parseFloat(maxTotal)
                         //console.log(total)
+                        console.log(typeof(total))
+                        console.log(typeof(maxTotal))
                         if (total > maxTotal) {
                             maxTotal = total;
                             maxRoll = numOfRounds;
