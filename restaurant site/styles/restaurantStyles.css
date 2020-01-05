@@ -1,12 +1,27 @@
 @charset "utf-8";
 /* CSS Document */
-.jumbotron{
-	background-color:#00a99d;
-	text-align: center;
-	font-family: fantasy;
+#top{
+    /*background-color:#00a99d;*/
+    background-image: url(../images/jumboheader.jpg);
+    background-size: cover;
+    text-align: left;
+    background-position: center;
+    font-family: Bradley Hand, cursive ;
+    color:black;
+   /* padding: 10em ;*/
+   min-height: 400px;
+    width:100%;
+    background-repeat:no-repeat;
+    object-fit: cover;
+}
+#bottom{
+     background-color:#00a99d;
+     text-align: center;
+    font-family: Bradley Hand, cursive ;
 }
 body{
-	background-color:#EAE7DC;
+    background-color:#EAE7DC;
+    font-family: Bradley Hand, cursive ;
 }
 .nav-tabs .nav-link.active,
 .nav-tabs .nav-item.show .nav-link {
@@ -37,7 +52,7 @@ nav {
 	background-color: #bdfff6;
 	text-align: center;
 	font-style: italic;
-	font-family: fantasy;
+	font-family: Bradley Hand, cursive ;
 }
 
 /*.nav-link.active{
