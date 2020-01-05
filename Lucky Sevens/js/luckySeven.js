@@ -11,27 +11,51 @@ function play() {
 
         if (!isNaN(startBet)) {
             if (startBet > 0) {
-                var total = startBet;
+                console.log("start")
+                
+                var total = parseFloat(startBet);
+                console.log(total);
+                console.log(typeof(total));
                 var maxTotal = total;
                 var numOfRounds = 0;
                 var maxRoll = 0;
                 // alert(startBet);
+                var test = 5.342
+                var b = test.toFixed(2)
+                console.log(b)
                 do {
                     numOfRounds++;
+                    console.log("round")
+                    console.log(numOfRounds)
                     var result = roll();
+                    console.log("roll")
+                    console.log(result)
                     if (result === 7) {
+                       // console.log(typeof(total));
+                        total = parseFloat(total);
                         total += 4;
+                        //console.log(total)
+                        //console.log(typeof(total));
+                        total = parseFloat(total);
+                        total = total.toFixed(2);
+                        //console.log(total)
                         if (total > maxTotal) {
                             maxTotal = total;
                             maxRoll = numOfRounds;
                         }
                     }
                     else {
+                       // console.log(typeof(total));
+                        total = parseFloat(total);
                         total--;
+                        total = total.toFixed(2)
+                        //console.log(typeof(total));
                     }
+                    console.log("total")
                     console.log(total)
+                   // console.log(total)
                 } while (total > 0)
-                console.log(numOfRounds);
+                console.log("end");
                 var table = document.getElementById("table");
                 //var startBetSpot = document.getElementById("startBet");
                 //startBetSpot.innerText=startBet;
@@ -72,7 +96,7 @@ function showTable(table) {
 }
 function roll() {
     var rolls = rollDice() + rollDice();
-    console.log(rolls);
+   // console.log(rolls);
     return rolls;
 }
 function rollDice() {
