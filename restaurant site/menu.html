@@ -4,10 +4,11 @@
 <head>
 	<meta name="viewport" content="width=device-width, initial-scale=1" charset="utf-8">
 	<title>Menu</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link href="css/bootstrap-4.3.1.css" rel="stylesheet" type="text/css">
 	<link href="styles/restaurantStyles.css" rel="stylesheet" type="text/css" />
 	<style>
-		table,
+		/*table,
 		th,
 		td {
 			border: 1px solid #0d1f2d;
@@ -31,6 +32,25 @@
 		th {
 			background-color: #e98074;
 			color: white;
+		}*/
+		table {
+			width: 70%;
+			margin: auto;
+		}
+		th,
+		.table-striped>tbody>tr:nth-child(even)>td,
+		.table-striped>tbody>tr:nth-child(even)>th {
+			background-color: #00a99d;
+		}
+		.table-bordered{
+			border: 5px solid #0d1f2d;
+			border-collapse: collapse;
+			padding: 5px 10px;
+		}
+		td,th{
+			border: 1px solid #0d1f2d;
+			border-collapse: collapse;
+			padding: 5px 10px;
 		}
 	</style>
 </head>
@@ -42,20 +62,20 @@
 	<hr />
 	<noscript>
 		This site is best viewed with JavaScript enabled!
-	 </noscript>
+	</noscript>
 	<div class="row justify-content-center">
 		<div class="col-lg-5" id="jim">
 			<ul class="nav nav-tabs justify-content-center">
 				<li class="nav-item">
-				  <a class="nav-link" href="index.html">Home</a>
+					<a class="nav-link" href="index.html"><i class="fa fa-fw fa-home"></i></a>
 				</li>
 				<li class="nav-item">
-				  <a class="nav-link active" href="menu.html">Menu</a>
+					<a class="nav-link active" href="menu.html">Menu</a>
 				</li>
 				<li class="nav-item">
-				  <a class="nav-link" href="contact_us.html">Contact Us</a>
+					<a class="nav-link" href="contact_us.html">Contact Us</a>
 				</li>
-			  </ul>
+			</ul>
 			<!--<a class="btn" href="index.html">Home</a>
 			<a class="btn" href="menu.html">Menu</a>
 			<a class="btn" href="contact_us.html">Contact Us</a>-->
@@ -110,14 +130,14 @@
 
 
 
-
+		<!---->
 	</div>
 	<!--</div>-->
 
 
 	<div class="row justify-content-center">
 		<div class="col-6">
-			<table>
+			<table class="table table-bordered table-striped">
 				<thead>
 					<th scope="col">Beverages</th>
 					<th scope="col">Price</th>
