@@ -1,59 +1,61 @@
 // JavaScript Document
-function main() {
+function play() {
     var valuein = document.getElementById("input");
     var cashBet = valuein.value;
-    
-    if(cashBet.substring(0,1) === "$"){
-         cashBet = cashBet.replace('$' ,' ');
-        alert(cashBet);
-        var startBet =parseFloat(cashBet);
-        //alert(startBet)
-        try {
-         //   alert(startBet)
-            alert(toCurrency(startBet));
-        } catch (error) {
-            alert("Invalid Input")
-        }
-    }
-    if (!isNaN(startBet)) {
-        if (startBet > 0) {
-            var total = startBet;
-            var maxTotal = total;
-            var numOfRounds = 0;
-            var maxRoll = 0;
-           // alert(startBet);
-            do {
-                numOfRounds++;
-                var result = roll();
-                if (result === 7) {
-                    total += 4;
-                    if (total > maxTotal) {
-                        maxTotal = total;
-                        maxRoll = numOfRounds;
-                    }
-                }
-                else {
-                    total--;
-                }
 
-            } while (total > 0)
-            console.log("HERE");
-            console.log(numOfRounds);
-            var table = document.getElementById("table");
-            //var startBetSpot = document.getElementById("startBet");
-            //startBetSpot.innerText=startBet;
-            addElement("startBet", toCurrency(startBet))
-            addElement("totalRoll", numOfRounds)
-            addElement("highestAmount", toCurrency(maxTotal))
-            addElement("rollCount", maxRoll)
-            showTable(table);
+    if (cashBet.substring(0, 1) === "$") {
+        startBet = cashBet.replace('$', ' ');
+        //alert(cashBet);
+        //var startBet = parseFloat(cashBet);
+        //alert(startBet);
+
+        if (!isNaN(startBet)) {
+            if (startBet > 0) {
+                var total = startBet;
+                var maxTotal = total;
+                var numOfRounds = 0;
+                var maxRoll = 0;
+                // alert(startBet);
+                do {
+                    numOfRounds++;
+                    var result = roll();
+                    if (result === 7) {
+                        total += 4;
+                        if (total > maxTotal) {
+                            maxTotal = total;
+                            maxRoll = numOfRounds;
+                        }
+                    }
+                    else {
+                        total--;
+                    }
+                    console.log(total)
+                } while (total > 0)
+                console.log(numOfRounds);
+                var table = document.getElementById("table");
+                //var startBetSpot = document.getElementById("startBet");
+                //startBetSpot.innerText=startBet;
+                addElement("startBet", toCurrency(startBet))
+                addElement("totalRoll", numOfRounds)
+                addElement("highestAmount", toCurrency(maxTotal))
+                addElement("rollCount", maxRoll)
+                showTable(table);
+                var millisecondsToWait = 1000;
+                setTimeout(function () {
+                    // Whatever you want to do after the wait
+                    alert("Click Play to Play Again!")
+                }, millisecondsToWait);
+                
+            }
+            else {
+                alert("Bet must be greater than 0");
+            }
         }
         else {
-            alert("Bet must be greater than 0");
+            alert("Bet must be a number")
         }
-    }
-    else {
-        alert("Bet must be a number")
+    } else {
+        alert("Input must be a currency value ($x.xx)")
     }
 }
 function toCurrency(value) {
@@ -69,10 +71,32 @@ function showTable(table) {
     table.style.display = "flex";
 }
 function roll() {
-    rolls = rollDice() + rollDice();
+    var rolls = rollDice() + rollDice();
     console.log(rolls);
     return rolls;
 }
 function rollDice() {
     return Math.floor(Math.random() * 6) + 1;
+}
+function validate() {
+    var valuein = document.getElementById("input");
+    console.log(valuein.value)
+    var cashBet = valuein.value;
+    if (cashBet.substring(0, 1) === "$") {
+        startBet = cashBet.replace('$', ' ');
+        //alert(cashBet);
+        //var startBet = parseFloat(cashBet);
+        //alert(startBet);
+
+        if (!isNaN(startBet)) {
+            if (startBet <= 0) {
+                alert("Bet must be greater than 0");
+            }
+        }
+        else {
+            alert("Bet must be a number")
+        }
+    } else {
+        alert("Input must be a currency value ($x.xx)")
+    }
 }

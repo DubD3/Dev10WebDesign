@@ -1,63 +1,82 @@
 <!doctype html>
 <html>
+
 <head>
-<meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Lucky Sevens</title>
-<link href="css/bootstrap-4.3.1.css" rel="stylesheet" type="text/css">
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Lucky Sevens</title>
+	<link href="css/bootstrap-4.3.1.css" rel="stylesheet" type="text/css">
 	<script type="text/javascript" src="js/luckySeven.js"></script>
 	<style>
-		table, th, td{
-				border: 1px solid #0d1f2d;
-				border-collapse: collapse;
-				padding: 5px 10px;				
-			}
-			table{
-				width: 90%;
-				margin:auto;
-			}
-			tr{
-				height: 30px;
-			}
-			tr:nth-child(odd){
-				background-color:#e4c3ad;
-			}
-			th{
-				background-color:#546a7b;
-				color:white;
-			}
-		#table{
+		table,
+		th,
+		td {
+			border: 1px solid #0d1f2d;
+			border-collapse: collapse;
+			padding: 5px 10px;
+		}
+
+		table {
+			width: 90%;
+			margin: auto;
+		}
+
+		tr {
+			height: 30px;
+		}
+
+		tr:nth-child(odd) {
+			background-color: #e4c3ad;
+		}
+
+		th {
+			background-color: #546a7b;
+			color: white;
+		}
+
+		#table {
 			align-content: flex-start;
 		}
-		
+
+		h1 {
+			font-size: 4rem;
+		}
+
+		#sbet {
+			font-size: 1.5rem;
+		}
+
+		input[type="text"] {
+			max-width: 100px;
+			min-width:50px;
+		}
 	</style>
 </head>
-	
+
 
 <body>
 	<div class="container">
-		<div class= "row justify-content-center">
-			<div class="col-7">
+		<div class="row">
+			<div class="col-sm-5 offset-sm-4">
 				<h1>Lucky Seven</h1>
 			</div>
 		</div>
-		<div class= "row justify-content-center">
-			<div class="col-2">
-				<h2>Starting Bet:</h2>
-			</div>
-			<div class="col-5">
-				<input id="input" type="text" value="$0.00" >
+		<div class="row">
+			<label id="sbet" for="input" class="col-sm-2 offset-4 col-form-label text-right">Starting Bet:</label>
+			<div class="col-sm-3 ">
+				<input type="text" id="input" name="input" class="form-control" value="$0.00" onchange="validate()">
 			</div>
 		</div>
-		<div class= "row justify-content-center">
-			<div class="col-4">
-				<button onClick="main();">Play</button>
+		<div class="row ">
+			<div class="col-sm-3 offset-6">
+				<button onClick="play();">Play</button>
 			</div>
 		</div>
-		<div id="table" style="display:none" >
-			<div class="col-md-6 offset-2">
-				<table >
+		<br/>
+		<div id="table" class = "row" style="display:none">
+			<div class="col-sm-6 offset-sm-3">
+				<table>
 					<tbody>
 						<tr>
 							<td>Starting Bet</td>
@@ -78,13 +97,14 @@
 					</tbody>
 				</table>
 			</div>
-		</divid="table" style="display:none">
-	</div>
-	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> 
-	<script src="js/jquery-3.3.1.min.js"></script>
+			</divid="table" style="display:none">
+		</div>
+		<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+		<script src="js/jquery-3.3.1.min.js"></script>
 
-	<!-- Include all compiled plugins (below), or include individual files as needed -->
-	<script src="js/popper.min.js"></script> 
-	<script src="js/bootstrap-4.3.1.js"></script>
+		<!-- Include all compiled plugins (below), or include individual files as needed -->
+		<script src="js/popper.min.js"></script>
+		<script src="js/bootstrap-4.3.1.js"></script>
 </body>
+
 </html>
