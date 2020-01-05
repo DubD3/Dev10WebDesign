@@ -4,6 +4,7 @@
 <head>
 	<meta name="viewport" content="width=device-width, initial-scale=1" charset="utf-8">
 	<title>Contact Us</title>
+	<link href="https://fonts.googleapis.com/css?family=Architects+Daughter&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link href="css/bootstrap-4.3.1.css" rel="stylesheet" type="text/css">
 	<link href="styles/restaurantStyles.css" rel="stylesheet" type="text/css" />
@@ -44,7 +45,7 @@
 		</div>
 	</div>
 	<div class="row justify-content-center">
-		<div class="col-lg-5" id="jim">
+		<div class="col-lg-5" id="mylinks">
 			<ul class="nav nav-tabs justify-content-center">
 				<li class="nav-item">
 					<a class="nav-link" href="index.html"><i class="fa fa-fw fa-home"></i></a>
@@ -194,7 +195,7 @@
 				valid=false;
 			}
 			if((isNaN(phone))||(phone ==="")){
-				alert("Please input a valid phone number.");
+				alert("Please input a valid phone number. Phone number must be numbers only");
 				valid =false;
 			}
 			if(questionnaire===""){

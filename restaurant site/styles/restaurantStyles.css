@@ -6,22 +6,26 @@
     background-size: cover;
     text-align: left;
     background-position: center;
-    font-family: Bradley Hand, cursive ;
+   /* font-family: Bradley Hand, cursive ;
     color:black;
    /* padding: 10em ;*/
    min-height: 400px;
     width:100%;
     background-repeat:no-repeat;
     object-fit: cover;
+    position: relative;
 }
 #bottom{
      background-color:#00a99d;
      text-align: center;
-    font-family: Bradley Hand, cursive ;
+    /*font-family: Bradley Hand, cursive ;*/
 }
 body{
     background-color:#EAE7DC;
-    font-family: Bradley Hand, cursive ;
+    font-family: 'Architects Daughter', cursive;
+}
+a:visited{
+    color:red;
 }
 .nav-tabs .nav-link.active,
 .nav-tabs .nav-item.show .nav-link {
@@ -29,9 +33,11 @@ body{
   background-color:#EAE7DC ;
   border-color: #EAE7DC #EAE7DC #00a99d #EAE7DC;
 }
-
+a:link{
+    color: #00a99d;
+}
 .nav-tabs .nav-link {
-  color: #00a99d;
+  /*color: #00a99d;*/
   background-color:#EAE7DC ;
   /*border-color: #EAE7DC #EAE7DC #ffffff #EAE7DC;*/
 }
@@ -51,7 +57,7 @@ nav {
 .carousel {
 	background-color: #bdfff6;
 	text-align: center;
-	font-style: italic;
+	
 	font-family: Bradley Hand, cursive ;
 }
 
@@ -69,15 +75,18 @@ h1{
 }*/
 h4{
     position: absolute;
-    bottom:290px;
+    bottom:5px;
     
     
 }
 
 
-/*#jim a:visited{
-	color: rgb(214, 55, 55);
-}*/
+#mylinks a:visited{
+	color:#134b47;
+}
+#mylinks a:hover{
+	font-weight:bold;
+}
 /*
 .menuItem{
 	padding-bottom: 30px
