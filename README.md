@@ -6,13 +6,17 @@
 * Font was proved by [google fonts](https://fonts.google.com/?category=Handwriting&selection.family=Architects+Daughter)
 * Icon was proved by [font awsome]( https://fontawesome.com)
 ### Running Locally
-1. Clone the Repository
+1. Clone or download the Repository
 1. Open resturant site folder
 1. Open index.html with a web browser
 #### File Path: Dev10WebDesign/restaurant site/index.html
 ## Lucky Sevens 
 ### The link to the Lucky Sevens Site is [here](https://dubd3.github.io/Dev10WebDesign/Lucky%20Sevens/)
 * The Lucky Sevens was formated using [bootstrap 4](https://getbootstrap.com/)
-# How to clone the repo.
+### Running Locally
+1. Clone or download the Repository
+1. Open Lucky Sevens folder
+1. Open index.html with a web browser
+#### File Path: Dev10WebDesign/Lucky Sevens/index.html
 
 
