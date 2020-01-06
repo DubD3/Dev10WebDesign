@@ -5,6 +5,7 @@
 * The resturant site was formated using [bootstrap 4](https://getbootstrap.com/)
 * Font was proved by [google fonts](https://fonts.google.com/?category=Handwriting&selection.family=Architects+Daughter)
 * Icon was proved by [font awsome]( https://fontawesome.com)
+* Per the assignment requiorments, the form on the contact us page does not submit anywhere
 ### Running Locally
 1. Clone or download the Repository
 1. Open resturant site folder
